@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 
@@ -22,4 +24,15 @@ func main() {
 	// Eliminar Elementos
 	delete(dias, 1)
 	fmt.Println(dias)
+
+	//Nuevo Mapa
+	estudiantes := make(map[string][]int)
+
+	estudiantes["Alejandro"] = []int{13, 15, 16}
+	estudiantes["Enrique"] = []int{12, 10, 19}
+
+	fmt.Println(estudiantes)
+
+	//Acceder a un elemento específico de la lista
+	fmt.Println(estudiantes["Alejandro"][0]) // Imprime el valor 13, porque es la posición 0 del arreglo
 }
