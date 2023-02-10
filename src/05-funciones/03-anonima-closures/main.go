@@ -1,7 +1,5 @@
 package main
 
-
-
 import (
 	"fmt"
 	"strings"
@@ -27,14 +25,14 @@ func main() {
 
 	//Función anonima
 	
-			func() {
-				fmt.Println("Hola desde la función anónima")
-			}()
+		// 	func() {
+		// 		fmt.Println("Hola desde la función anónima")
+		// 	}()
 
-		myfunc := func(nombre string) string {
-			return fmt.Sprintf("Hola, %s desde la función anónima", nombre)
-		}
+		// myfunc := func(nombre string) string {
+		// 	return fmt.Sprintf("Hola, %s desde la función anónima", nombre)
+		// }
 
-		fmt.Println(myfunc("Enrique"))
+		// fmt.Println(myfunc("Enrique"))
 	
 }
